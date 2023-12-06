@@ -54,7 +54,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores doloribus voluptatibus quam ducimus, sint ea voluptates saepe commodi qui dolorum ad, impedit adipisci voluptatum, molestiae sapiente tempora enim excepturi! Illo.</p>
     <div class="overlay"
     x-show="petite"
-    @click="petite = null"
+    @keyup.escape.window="petite = null"
 >
         <figure><img :src="petite" alt="image 237... un chiot"></figure>
     </div>
